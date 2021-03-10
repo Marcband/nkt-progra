@@ -33,7 +33,7 @@ public class Zoo {
         z.einJahrVergeht();
         for(int i=0;i<z.lebewesen.length;i++){
             if(z.lebewesen[i].getClass().getSuperclass() == Säugetier.class)
-                ((Katze)z.lebewesen[i]).gruessen();
+                ((Säugetier)z.lebewesen[i]).gruessen();
         }
     }
 }
