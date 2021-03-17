@@ -16,8 +16,12 @@ public class Datenbank {
     public void addEntry(Mensch mensch){
         if(fill_level<=size){
             menschen[fill_level]=mensch;
+            fill_level++;
+        } else {
+            System.out.println("Die Datenbank ist voll, bitte legen Sie eine neue Datenbank an!");
         }
     }
+
     public Mensch getEntry(int index){
         return menschen[index];
     }
